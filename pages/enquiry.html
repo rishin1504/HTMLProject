@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Our Enquiry Form</title>
+</head>
+
+<script script type="text/javascript" src="script1.js"></script>
+
+<body>
+<font color="white" FONT FACE="Helvetica">
+<body style="background-color:#2e2e35;">
+<h1 ALIGN= "Center"><b></b></h1>
+<p ALIGN= "Center"><img  src="images/forms.png" width="180" height="180"></p>
+<h2 ALIGN= "Center">ENQUIRY FORM</h2>
+<hr align= "center" size="1.5" width="80%"></hr>
+	
+<form align= "center" id="enquiry">
+    <label for="fname"><b>First Name:</b></label>
+    <input type="text"  id="fname" name="fname" style="background-color:#f5f4d6;border:3px solid #ebfc05;">
+    <label for="lname"><b>Last name:</b></label>
+    <input type="text" id="lname" name="lname" style="background-color:#f5f4d6;border:3px solid #ebfc05;">
+    
+    <p>
+        <b>Gender:</b>
+        <input type="radio" id="gender1" name="gender" value="male" checked>
+        <label for="gender">Male</label>
+        <input type="radio" id="gender2" name="gender" value="female">
+        <label for="gender">Female</label><br> 
+    </p>
+    
+    <p><b>Nationality:</b>
+        <input type="radio" id="nation1" name="nation" value="malaysian" checked>
+        <label for="nation">Malaysian</label>
+        <input type="radio" id="nation2" name="nation" value="none">
+        <label for="nation">Non-Malaysian</label><br>
+    </p>
+    <p><b>Enter your phone number:</b>
+    <!-- input type="tel" id="pnum" name="pnum"  pattern="[0-9]{10}" placeholder="Example Format:+14151231234" style="background-color:#f3d1d1;border:3px solid #f53333;" -->
+    <!-- input type="text" id="pnum" name="pnum" pattern="^(\+?6?01)[0-46-9]-*[0-9]{7,8}$" -->
+    <input type="tel" id="pnum" name="pnum" pattern="^\+[1-9]\d{1,14}$" style="background-color:#f3d1d1;border:3px solid #f53333;" >
+    <small>This field uses e164 international telephone number format. Example Format:+6xxxxxxxxxx</small>
+    </p>
+    <p><b>Enter your email:</b>
+    <input type="email" id="email" name="email" style="background-color:#9ac3eb;border:3px solid #2946c7;">
+    </p>
+    <p><b>Accommodation:</b>
+        <input type="radio" id="acc1" name="acc" value="Required">
+        <label for="acc">Required</label>
+        <input type="radio" id="acc2" name="acc" value="Not Required">
+        <label for="acc">Not Required</label><br>
+        <small>***ACCOMMODATION PROVIDED TO SELECTED. PRIORITY FOR NON-MALAYSIA RESIDENT***</small>
+    </p>
+    <p><b>Query Box :</b></p>
+    <p><textarea id="query" name="query" rows="4" cols="50" style="background-color:#cef1cb;border:3px solid #02660a;" placeholder="***Enter your query in here.***"></textarea>
+    </p>
+
+</form>
+<p align="center">
+    <input type="button" name="submit" value="Submit Now" onclick="processData();">
+    <input type="button" name="clear" value="Clear Form" onclick="clearform();">
+</p>
+
+<br>
+<hr align= "center" size="1.5" width="80%"></hr>
+<p align="center">
+
+<h3 ALIGN="center">THIS SECTION IS FOR YOU</h3>
+<p align="center">
+
+    <b>
+    <a href="../index.html">Welcome Page  &#127968;  </a>|
+    <a href="event.html">The Event  &#127914;		</a>|
+    <a href="product.html">The Products  &#128241;  </a>|
+    <a href="gallery.html">The Gallery  &#x1f5bc;  </a>|
+    <a href="about.html">About Me  &#128100;		</a>|
+    </b>
+
+</font>
+</body>
+</html>
